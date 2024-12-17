@@ -78,6 +78,76 @@ header ul li{
 
 header ul li:hover{
     transform: scale(1.2);
+    cursor: pointer;
+}
+
+.genders-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+.gender-card{
+    display: flex;
+    background-color: #C28CAE;
+    color: white;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+.gender-card:hover{
+    background-color: white;
+    color:black;
+    transform: translateY(-10px);
+    -webkit-box-shadow: 28px 25px 0px -6px #C28CAE;
+    -moz-box-shadow: 28px 25px 0px -6px #C28CAE;
+    box-shadow: 28px 25px 0px -6px #C28CAE;
+}
+
+.info-gender-card{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem; 
+    max-width: 60%; 
+    text-align: justify;
+}
+
+
+.button-fn {
+    border: 1px solid transparent;
+    background-color: white; 
+    color: #C28CAE; 
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: 200ms;
+    align-self: flex-start; 
+}
+
+.button-fn:hover {
+    background-color: #C28CAE; 
+    color: white;
+}
+
+.image-gender-container{
+    width: 35%;
+}
+
+.image-gender-container img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 .cards-container{
@@ -112,8 +182,9 @@ header ul li:hover{
 }
 
 .card_exploradores{
-    background-color: #FCBA04;
+    background-color: #FAA300;
 }
+
 
 .card-image-container{
     width: 90%;
@@ -180,4 +251,52 @@ header ul li:hover{
     color: white;
 }
 
+footer{
+    background-color: #F08D34;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
 
+.footer-logo-container{
+    width: 5rem;
+    background-color: white;
+    border-radius: 100%;
+    border: #7F556E;
+}
+
+.footer-logo-container img{
+    width: 100%;
+}
+
+.links-containers{
+    display: flex;
+    font-weight: bold;
+    gap: 3.5rem;
+}
+
+.links-containers li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logos-container{
+    display: flex;
+    gap: 3.5rem;
+}
+
+.logos-container li{
+    width: 4rem;
+}
+
+.logos-container img{
+    filter: invert(100);
+    width: 100%;
+    transition: 200ms;
+}
+
+.logos-container img:hover{
+    transform: scale(1.3);
+}
